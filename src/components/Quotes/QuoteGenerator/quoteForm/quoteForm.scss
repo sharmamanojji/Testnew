@@ -1,0 +1,54 @@
+@import '../../../../scss/themeSrc';
+.quote-module{
+    .quote-module__form{
+        @include PaddingCommon(50px);
+        @include border-radius(8px);
+        border:1px solid $borderColor;
+        box-shadow: none;
+        background: $whiteColor;
+        &.success-module{
+            @media(min-width:$smDeivce){
+                @include Margin(0,auto,0,auto);
+                width:660px;
+            }
+            .success-section{
+                text-align: $textCenter;
+                border-bottom: 1px solid $borderColor;
+                h4{
+                    font-size: 20px;
+                    color: $blackColor;
+                    font-weight: $wight700;
+                    text-transform: $upperCase;
+                    @include Margin(24px,0,24px,0);
+                }
+                p{
+                    color: $paragraphColor;
+                    @include Margin(0,0,30px,0);
+                }
+            }
+        }
+        .textarea{
+            @include Margin(0,0,20px,0);
+            textarea{
+                @include Padding(6px,12px,6px,12px);
+                width: 96%;
+            }
+            span{
+                display: $dBlock;
+                color: #767676;
+                font-size: 12px;
+                text-align: $textRight;
+            }
+        }
+        h2{
+            font-weight: $wight700;
+            font-size: 16px;
+            @include Margin(30px,0,20px,0);
+            text-transform: $upperCase;
+            font-family: "Opensans-bold";
+            &.step-2-heading{                
+                @include Margin(40px,0,15px,0);
+            }
+        }
+    }
+}

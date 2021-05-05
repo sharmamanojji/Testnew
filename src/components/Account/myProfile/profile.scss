@@ -1,0 +1,170 @@
+@import '../../../scss/themeSrc';
+
+.profile-module{
+    .profile-module-form{
+        @include PaddingCommon(0px);
+        @include border-radius(8px);
+        border:1px solid $borderColor;
+        box-shadow: none;
+        background: $whiteColor;
+        box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.05), 0px 4px 8px rgba(0, 0, 0, 0.1);
+        .profile-inner{
+            padding: 20px;
+            border-bottom: 1px solid $borderColor;
+            position: relative;
+            color: $profiletxtColor;
+            label{
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                color: $lightGray;
+            }
+            .editIcon{
+                cursor: pointer;
+                position: absolute;
+                right: 20px;
+                top: 15px;
+                color: $arrowIcon;
+                &.primarycolor{
+                    color: $primaryColor;
+                }
+            }
+            .edit-field{
+                margin-top: 15px;
+                .button-group{
+                    display: flex;
+                    align-items: center;
+                    button{
+                        margin: 0 0px 0 15px;
+                        min-width: 83px;
+                    }
+                }
+            }
+            .profile-label{
+                >label{
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: bold;
+                color: $profiletxtColor;
+                }
+            }
+            button{
+                font-weight: 700;
+            }
+            .justify-end{
+                display: flex;
+                justify-content:flex-end;
+            }
+        }
+    }
+        
+    .heading-top{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px;
+        text-transform: uppercase;
+        padding: 20px 0 0;
+    }
+}
+
+.mt30{
+  margin-top: 30px !important
+}
+.pb15{
+  padding-bottom: 15px !important
+}
+
+
+.profile-right{
+    @include Padding(0,0,0,0px);
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.05), 0px 4px 8px rgba(0, 0, 0, 0.1);
+    @include border-radius(4px);
+    .rightSidebar{
+      background-color:$whiteColor;
+      .faqData{
+        padding: 15px 15px 30px;
+        ul{
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li{
+            padding: 15px 40px 15px 15px;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: normal;
+            border-bottom: 1px solid $borderColor;
+            position: relative;
+            >span{
+              color: $arrowIcon;
+              font-size: 30px;
+              cursor: pointer;
+              position: absolute;
+              right: 0;
+              top: 15px;
+            }
+          }
+        }
+        .view-more{
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+            margin-top: 20px;
+        }
+      }
+      img{
+        max-width: 100%;
+      }
+      h2{
+        font-weight: $wight700;
+        text-transform: $upperCase;
+        @include Margin(0,0,20px,0); 
+        font-size: 18px;
+        line-height: 32px;
+        padding: 30px 30px 0;
+      }
+    }
+  }
+.company-description{
+  .company-desc{
+    label{
+      border: 1px solid $borderColor;
+      padding: 8px 16px;
+    }
+  }
+  textarea{
+    width: 100%;
+    resize: none;
+  }
+}
+
+
+.selectfromData{
+  &.minSize{
+    min-width: 500px;
+  }
+}
+.imagelist{
+  align-items: center;
+  margin-top: 10px !important;
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    label{
+      margin-bottom: 0;
+    }
+    li{
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+}
+.customize-modal{
+  h6{
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}

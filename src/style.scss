@@ -1,0 +1,136 @@
+@import './scss/themeSrc';
+@font-face {
+  font-family: 'OpenSans-Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),  
+  url('./assets/fonts/OpenSans-Light.woff') format('woff'), 
+  url('./assets/fonts/OpenSans-Light.ttf')  format('truetype'), 
+  url('./assets/fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+  src: local('Open Sans'), local('OpenSans'),
+       url('./assets/fonts/OpenSans-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./assets/fonts/OpenSans-Light.ttf')
+}  
+@font-face {
+  font-family: 'OpenSans-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/OpenSans-Regular.ttf'); /* IE9 Compat Modes */
+  src: local('Open Sans'), local('OpenSans'),
+       url('./assets/fonts/OpenSans-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+} 
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),  
+  url('./assets/fonts/OpenSans-SemiBold.woff') format('woff'), 
+  url('./assets/fonts/OpenSans-SemiBold.ttf')  format('truetype'), 
+  url('./assets/fonts/OpenSans-SemiBold.svg#OpenSans-SemiBold') format('svg');
+  src: local('Open Sans'), local('OpenSans'),
+       url('./assets/fonts/OpenSans-SemiBold.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),  
+  url('./assets/fonts/OpenSans-Bold.woff') format('woff'), 
+  url('./assets/fonts/OpenSans-Bold.ttf')  format('truetype'), 
+  url('./assets/fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+  src: local('Open Sans'), local('OpenSans'),
+       url('./assets/fonts/OpenSans-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'OpenSans-ExtraBold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/OpenSans-ExtraBold.ttf'); /* IE9 Compat Modes */
+  src: local('Open Sans'), local('OpenSans'),
+       url('./assets/fonts/OpenSans-ExtraBold.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Material Design Icons";
+  src: url("./assets/fonts/materialdesignicons-webfont.eot?v=4.8.95");
+  src: url("./assets/fonts/materialdesignicons-webfont.eot?#iefix&v=4.8.95") format("embedded-opentype"), url("./assets/fonts/materialdesignicons-webfont.woff2?v=4.8.95") format("woff2"), url("./assets/fonts/materialdesignicons-webfont.woff?v=4.8.95") format("woff"), url("./assets/fonts/materialdesignicons-webfont.ttf?v=4.8.95") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/fonts/materials.woff2) format('woff2');
+} 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "OpenSans-Regular", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $ShadeThreeColor;
+  background: #f9f9f9 !important;
+}
+
+
+.brand-logo{
+  font-family: "OpenSans-Regular", sans-serif;
+}
+.mt30{
+  margin-top: 30px;
+}
+.w-100{
+  width: 100%
+}
+.application-right{
+  @include Padding(0,0,0,40px);
+  h5{
+      font-weight: $wight700;
+      text-transform: $upperCase;
+      @include Margin(0,0,20px,0);
+      color: $HeadingColor;
+  }
+}
+
+.AcntSelectWrapper {
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  align-self: center;
+  width: 100%;
+  text-align: right;
+}
+
+.MenuBox.dropdown-menu{
+  .dropdown-item{
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+}

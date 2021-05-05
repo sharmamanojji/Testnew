@@ -1,0 +1,169 @@
+@import '../../scss/themeSrc';
+.userStatus{
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-top: 10px;
+    color: $ShadeThreeColor;
+}
+
+.guest-user{
+    .heading-top{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: capitalize;
+    }
+    .acut_box{
+        border: 1px solid $borderColor;
+        padding:40px 24px 24px !important;
+        position: relative;
+        height: 270px;
+        margin-bottom: 30px;
+        .kebabMenu{
+            position: absolute;
+            right: 12px;
+            top: 12px;
+        }
+        h3{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
+        p{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 6px;
+        }
+        .activeStatus{
+            background-color: #DAEDF2 !important;
+            @extend .userStatus;
+        }
+        .pendingStatus{
+            background-color:  #F2E8DA !important; 
+            @extend .userStatus;
+        }
+        &.addAGuest{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px !important;
+            cursor: pointer;
+            .acut_box_guest{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            span{
+                font-size: 2.5rem;
+                margin-bottom: 15px;
+                color: $borderColor;
+            }
+            p{
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                label{
+                    margin-bottom: 0;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+
+
+.rightsideBar{
+    h2{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 32px;
+        text-transform: uppercase;
+        padding: 24px 24px 0;
+    }
+    img{
+        max-width: 100%;
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 24px 24px;
+        li{
+            padding: 10px 0;
+            a{
+                color: $primaryColor;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+}
+
+
+.editModaldata{
+    .gutterareapop{
+        display: block;
+        text-align: right;
+        position: Relative;
+        justify-content: flex-end;
+        padding: 0px 20px;
+        margin-top: 30px;
+        width: 100%;
+            button::after {
+            content: 'close';
+            position: absolute;
+            bottom: -15px;
+            font-size: 0.8125rem;
+            text-align: center;
+            width: 100%;
+            left: 0;
+            }
+    }
+    
+    h6.h6Heading {
+        justify-content: center;
+        width: 100%;
+        font-size: 20px;
+        text-transform: uppercase;
+        display: flex;
+        margin-top: 30px;
+        font-weight: bold;
+    }
+    p{
+        margin-top: 30px;
+    }
+    .modal_role{
+        h4{
+            font-size: 18px;
+            margin-top: 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+    .DatePickerSelect{
+        margin-top: 24px;
+    }
+    .FormButtonsArea{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        button{
+            min-width: 100px;
+            margin-left: 15px;
+        }
+    }  
+}
+
+.snackbarmain {
+    width: 100%;
+    top: 0 !important;
+    .innerSnackBar{
+        width: 100%;
+    }
+}

@@ -1,0 +1,272 @@
+@import "../../scss/themeSrc";
+.stepheading {
+  ol {
+    &.progtrckrs {
+      &.TwoStep {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #dbdbdb;
+        em {
+          display: $dNone;
+        }
+        &:after {
+          content: "";
+          border-bottom: 1px solid $paragraphColor;
+          width: 100%;
+          @include Margin(24px, 0, 0, 0);
+        }
+        li {
+          pointer-events: none;
+          display: $dInlineBlock;
+          text-align: $textCenter;
+          @include PaddingCommon(0);
+          @include Margin(25px, 0, 20px, 0);
+          cursor: pointer;
+          width: 92%;
+          &:before {
+            position: relative;
+            top: 15px;
+            float: left;
+            left: -1%;
+          }
+          &::last-child {
+            border-bottom: none;
+            width: auto;
+          }
+          span {
+            @include PaddingCommon(0);
+            position: absolute;
+            left: 68px;
+            margin-top: -25px;
+            color: rgba(0, 0, 0, 0.87);
+            font-family: "Opensans-bold";
+            text-transform: $upperCase;
+            font-weight: $wight700;
+          }
+          &.progtrckrs-doing {
+            color: $blackColor;
+            border-bottom: 6px solid #dedede;
+            &:before {
+              content: "\E061";
+              color: $whiteColor;
+              background-color: $primaryColor;
+              width: 25px;
+              line-height: 25px;
+              border-radius: 50%;
+              font-size: 14px;
+              height: 25px;
+              font-family: "material icons";
+            }
+          }
+          &.progtrckrs-todo {
+            color: silver;
+            border-bottom: 6px solid #dedede;
+            span {
+              display: none;
+            }
+            &::before {
+              content: "2";
+              color: $paragraphColor;
+              background-color: #dedede;
+              width: 25px;
+              line-height: 25px;
+              border-radius: 50%;
+              font-size: 1rem;
+              font-family: "NewsGothicFamily-Semibold", sans-serif;
+              height: 25px;
+            }
+            &:nth-child(3) {
+              &::before {
+                content: "3";
+              }
+            }
+            &:nth-child(4) {
+              &::before {
+                content: "4";
+              }
+            }
+          }
+          &.progtrckrs-done {
+            color: $blackColor;
+            border-bottom: 6px solid $primaryColor;
+            span {
+              display: none;
+            }
+            &::before {
+              content: "\E876";
+              font-family: Material Icons;
+              font-weight: $wight700;
+              color: white;
+              background-color: $primaryColor;
+              width: 25px;
+              line-height: 25px;
+              border-radius: 50%;
+              height: 25px;
+            }
+          }
+          &:last-child {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.registerStep1 {
+  .mb-30 {
+    margin-bottom: 20px;
+  }
+  .stepper-heading {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: $upperCase;
+    color: $HeadingColor;
+    margin-bottom: 20px;
+  }
+  p {
+    font-weight: 600;
+    font-size: 16px;
+    color: $blackColor;
+  }
+  h6 {
+    font-weight: 600;
+    font-size: 16px;
+    color: $blackColor;
+  }
+  .VariableCostContents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    &.totalCosts {
+      color: $HeadingColor;
+      text-transform: $upperCase;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+  }
+}
+.w-100 {
+  width: 100%;
+}
+.registerStep2 {
+  .passwordField {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+.containerWrapper {
+  h3 {
+    font-weight: bold;
+    font-size: 20px;
+    color: $HeadingColor;
+    margin-bottom: 30px;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 20px;
+    color: $HeadingColor;
+    margin-bottom: 30px;
+    text-transform: $upperCase;
+  }
+  .stepTwo {
+    .iagree {
+      margin-top: 20px;
+      padding-left: 10px;
+      a {
+        color: $primaryColor;
+        margin-left: 5px;
+      }
+    }
+
+    .stepper-heading {
+      font-weight: 600;
+      font-size: 18px;
+      text-transform: $upperCase;
+      color: $HeadingColor;
+      margin-bottom: 20px;
+    }
+  }
+}
+.quote-module__form {
+  padding: 50px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border: 1px solid #dbdbdb;
+  box-shadow: none;
+  background: #ffffff;
+}
+.contactStepperRight {
+  padding-left: 40px;
+  h4 {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: $upperCase;
+    color: $HeadingColor;
+  }
+}
+
+.withIconBox{
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  .material-icons {
+    margin-right: 5px;
+  }
+  .redWarning{
+    color:#d23636;
+  }
+}
+
+.step-2 {
+  h2 {
+    color: $HeadingColor;
+  }
+  .ReviewTxtList {
+    @include PaddingCommon(0);
+    li {
+      @include Padding(20px, 0, 20px, 0);
+      align-items: end;
+      &:after {
+        content: "";
+        background-color: #ccc;
+        height: 1px;
+        width: calc(100% - 50px);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .bgcommon {
+        background-color: transparent;
+        color: #53565a;
+        @include Margin(0, 10px, 0, 0);
+      }
+      .ReviewTxt {
+        flex: 1 1 auto;
+        .Primarytxt {
+          color: #333333;
+          font-size: 15px;
+          @include Margin(0, 0, 3px, 0);
+          font-weight: 600;
+        }
+        p {
+          color: #808080;
+          font-size: 14px;
+          description {
+            background: #f5f5f5;
+            display: $dBlock;
+            color: $paragraphColor;
+            font-size: 12px;
+            line-height: 24px;
+            @include PaddingCommon(20px);
+            @include Margin(10px, 0, 10px, 0);
+          }
+        }
+      }
+    }
+  }
+}

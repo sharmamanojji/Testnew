@@ -1,0 +1,50 @@
+.ManageUsersTableHeading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  align-items: center;
+  h3 {
+    font-size: 16px;
+  }
+}
+.ManageUsersTable {
+  box-shadow: none !important;
+  thead th {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+.addUserDialog {
+  .closeButtonDialog {
+    text-align: right;
+
+    button {
+      position: relative;
+      top: 17px;
+      right: 90px;
+      &:after {
+        content: "close";
+        position: absolute;
+        bottom: -15px;
+        font-size: 0.8125rem;
+        text-align: center;
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1982c5;
+  }
+  p {
+    font-size: 16px;
+    color: #333333;
+    margin: 35px 0px;
+  
+  }
+}

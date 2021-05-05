@@ -1,0 +1,42 @@
+@import '../../scss/themeSrc';
+
+.FooterMain {
+    padding: 3rem 0 0;
+    margin-bottom: 28px;
+    &.skinny-footer {
+        padding: 0;
+        display: flex;
+        width: 100%;
+    }
+}
+.group-links {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    flex-wrap: wrap;
+    li {
+        display: inline-block;
+        padding: 0 .5rem;
+        a {
+            color: $primaryColor;
+            padding: .5rem 0;
+            font-size: 0.75rem;
+            text-decoration: none;
+        }
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    text-align: center;
+    p {
+        color: $paragraphColor;
+        margin: 0;
+        font-size: 0.75rem;
+        width: 100%;
+    }
+}

@@ -1,0 +1,32 @@
+// Border radius
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+  }
+
+  // Padding All
+  @mixin Padding($Top,$Right,$Bottom,$Left) {
+    padding-top: $Top;
+    padding-right: $Right;
+    padding-bottom: $Bottom;
+    padding-left: $Left;
+  }
+
+  // Padding Common
+  @mixin PaddingCommon($Padding) {
+    padding: $Padding;
+  }
+
+  // Margin
+  @mixin Margin($Top,$Right,$Bottom,$Left) {
+    margin-top: $Top;
+    margin-right: $Right;
+    margin-bottom: $Bottom;
+    margin-left: $Left;
+  }
+  // Margin Common
+  @mixin MarginCommon($Margin) {
+    margin: $Margin;
+  }

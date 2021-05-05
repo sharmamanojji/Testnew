@@ -1,0 +1,9 @@
+@import '../../scss/themeSrc';
+
+.stepper-right {
+  h4 {
+    font-size: 16px;
+    color: $HeadingColor;
+    text-transform: $upperCase;
+  }
+}

@@ -1,0 +1,80 @@
+@import '../../../scss/themeSrc';
+.quote-module{
+    @include Margin(60px,0,60px,0);
+}
+.application-right{
+    @include Padding(0,0,0,70px);
+    h5{
+        font-weight: $wight700;
+        text-transform: $upperCase;
+        @include Margin(0,0,20px,0);
+        color: $HeadingColor;
+    }
+  }
+  .w-100{
+      width: 100%;
+  }
+  .MapSearch {
+    display: block;
+    width: 100%;
+    height: 350px;
+    border: solid 0px #333;
+    float: left;
+    padding-top: 80px;
+    position: relative;
+}
+.PingArea {
+    display: block;
+    width: 100%;
+    margin: 0px 0;
+    float: left;
+    button{
+        text-transform: initial;
+        text-decoration: underline;
+    }
+}
+.cusLookup{
+    background-color: $primaryColor;
+    color: $whiteColor;
+    display: inline-flex;
+    width: 100%;
+    padding: 25px;
+    position: absolute;
+    top: 0;
+    >div{
+        padding-left: 10px;
+        margin-top: -5px;
+        label{
+            width: 100%;
+            display: block;
+            margin-bottom: 0;
+        }
+        small{
+            display: inline-block;
+        }
+    }    
+}
+
+.DatePickerSelect {
+    background-color: rgba(0, 0, 0, 0.09);
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.DatePickerSelect>label {
+    left: 10px;
+    top: 5px;
+}
+
+.DatePickerSelect>label+.MuiInput-formControl {
+    margin-top: 0;
+    padding: 19px 10px 5px 10px;
+}
+.DatePickerSelect{
+    input{
+        padding:10px 10px;
+    }
+    button{
+        margin-top: -13px;
+    }
+}

@@ -1,0 +1,133 @@
+@import "../../scss/themeSrc";
+.tbHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  .SearchBoxContainer {
+    min-width: 320px;
+    background: #efefef;
+    input {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+.ContractTopBtns {
+  display: flex;
+  align-items: center;
+}
+.tpButton {
+  margin-left: 20px;
+}
+button.btn.customBtn {
+  background-color: $primaryColor !important;
+}
+
+table thead > tr > th > span {
+  font-family: 'OpenSans-Bold';
+}
+
+.dialogContracts {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  h2 {
+    display: flex;
+    justify-content: space-between;
+    h4 {
+      font-size: 16px;
+      text-transform: $upperCase;
+      margin-right: 24px;
+    }
+    .material-icons {
+      cursor: pointer;
+    }
+  }
+  .DialogContractInfo {
+    background: #f5f5f5;
+    border-radius: 4px;
+    padding: 16px 6px;
+    color: $blackColor;
+    font-size: 14px;
+    h6 {
+      font-weight: $wight600;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  }
+  p {
+    font-size: 14px;
+    color: $blackColor;
+    margin-top: 20px;
+  }
+  .DialogActions {
+    padding-right: 20px;
+  }
+}
+.ButtonPrimary {
+  font-weight: $wight700;
+  font-size: 14px;
+  text-transform: $upperCase;
+  color: #767676;
+}
+.ButtonSecondary {
+  font-size: 14px;
+  text-align: center;
+  text-transform: $upperCase;
+  font-weight: $wight700;
+  color: $whiteColor;
+  background: $linkColor;
+}
+
+.DatePickerSelect {
+  background-color: rgba(0, 0, 0, 0.09);
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  label {
+    left: 10px;
+    top: 5px;
+  }
+  input {
+    padding: 10px 10px;
+  }
+  button {
+    margin-top: -13px;
+  }
+}
+
+.DatePickerSelect > label + .MuiInput-formControl {
+  margin-top: 0;
+  padding: 19px 10px 5px 10px;
+}
+.ContractsSuccess {
+  background-color: $whiteColor;
+  padding: 25px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 30px;
+  border: 1px solid $borderColor;
+  .material-icons{
+    color: $colorGreen;
+    font-size: 50px;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-transform: $upperCase;
+    margin: 15px 0px;
+    color: $lightGray;
+  }
+  p {
+    font-size: 16px;
+    text-align: center;
+    color: $lightGray;
+  }
+}
+
+.listMenuItem{
+  height:44px;
+}
+.mCenter{
+  margin:0 auto;
+}

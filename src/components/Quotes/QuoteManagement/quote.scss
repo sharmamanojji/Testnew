@@ -1,0 +1,25 @@
+@import "../../../scss/themeSrc";
+.tbHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    .SearchBoxContainer{
+        min-width: 320px;
+        background: #efefef;
+            input{
+                padding-top:10px;
+                padding-bottom: 10px;
+            }
+    }
+}
+.ContractTopBtns {
+    display: flex;
+    align-items: center;
+}
+.tpButton {
+    margin-left: 20px;
+}
+button.btn.customBtn{
+    background-color:$primaryColor !important;
+}
